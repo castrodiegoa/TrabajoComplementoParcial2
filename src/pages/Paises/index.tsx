@@ -8,11 +8,11 @@ import {
   } from "@mui/material";
 
 const countriesData = [
-  { id: 1, name: "United States", registrationDate: "2022-05-10" },
-  { id: 2, name: "United Kingdom", registrationDate: "2022-05-11" },
-  { id: 3, name: "Canada", registrationDate: "2022-05-12" },
-  { id: 4, name: "Australia", registrationDate: "2022-05-13" },
-  { id: 5, name: "Germany", registrationDate: "2022-05-14" }
+  { id: 1, name: "Colombia", registrationDate: "2022-05-10" },
+  { id: 2, name: "Venezuela", registrationDate: "2022-05-11" },
+  { id: 3, name: "Uruguay", registrationDate: "2022-05-12" },
+  { id: 4, name: "Chile", registrationDate: "2022-05-13" },
+  { id: 5, name: "Argentina", registrationDate: "2022-05-14" }
 ];
 
 export const PaisesPage: React.FC<{}> = () => {
