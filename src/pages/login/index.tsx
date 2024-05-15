@@ -65,7 +65,7 @@ export const LoginPage: React.FC<{}> = () => {
                 margin="normal"
                 type="text"
                 fullWidth
-                label="Email"
+                label="Username"
                 sx={{ mt: 2, mb: 1.5 }}
                 required
                 onChange={dataLogin}
