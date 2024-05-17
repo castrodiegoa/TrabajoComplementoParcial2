@@ -22,3 +22,9 @@ Enlace a GitHub: [Repositorio en GitHub](https://github.com/castrodiegoa/Trabajo
      ```bash
      npm start
      ```
+4. **Iniciar sesión**:
+   - Ejecutar el proyecto se puede iniciar sesión con las siguientes credenciales:
+     ```bash
+     usuario: diegoacastro
+     contraseña: die18
+     ```

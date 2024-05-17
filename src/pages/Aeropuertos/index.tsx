@@ -2,11 +2,36 @@ import React from "react";
 import { Container, Grid, Paper, Typography } from "@mui/material";
 
 const airportData = [
-  { id: 1, name: "Alfonso López", cityName: "Valledupar", registrationDate: "2022-05-10" },
-  { id: 2, name: "El Dorado", cityName: "Bogotá", registrationDate: "2022-05-11" },
-  { id: 3, name: "Ernesto Cortissoz", cityName: "Barranquilla", registrationDate: "2022-05-12" },
-  { id: 4, name: "Almirante Padilla", cityName: "Riohacha", registrationDate: "2022-05-13" },
-  { id: 5, name: "Antonio Nariño", cityName: "Pasto", registrationDate: "2022-05-14" }
+  {
+    id: 1,
+    name: "Alfonso López",
+    cityName: "Valledupar",
+    registrationDate: "2022-05-10",
+  },
+  {
+    id: 2,
+    name: "El Dorado",
+    cityName: "Bogotá",
+    registrationDate: "2022-05-11",
+  },
+  {
+    id: 3,
+    name: "Ernesto Cortissoz",
+    cityName: "Barranquilla",
+    registrationDate: "2022-05-12",
+  },
+  {
+    id: 4,
+    name: "Almirante Padilla",
+    cityName: "Riohacha",
+    registrationDate: "2022-05-13",
+  },
+  {
+    id: 5,
+    name: "Antonio Nariño",
+    cityName: "Pasto",
+    registrationDate: "2022-05-14",
+  },
 ];
 
 export const AeropuertosPage: React.FC<{}> = () => {
@@ -35,7 +60,7 @@ export const AeropuertosPage: React.FC<{}> = () => {
                   </tr>
                 </thead>
                 <tbody>
-                  {airportData.map(airport => (
+                  {airportData.map((airport) => (
                     <tr key={airport.id}>
                       <td>{airport.id}</td>
                       <td>{airport.name}</td>

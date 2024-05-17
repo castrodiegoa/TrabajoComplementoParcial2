@@ -2,11 +2,41 @@ import React from "react";
 import { Container, Grid, Paper, Typography } from "@mui/material";
 
 const regionsData = [
-  { id: 1, name: "Cesar", countryId: 1, countryName: "Colombia", registrationDate: "2022-05-10" },
-  { id: 2, name: "Cundinamarca", countryId: 1, countryName: "Colombia", registrationDate: "2022-05-11" },
-  { id: 3, name: "Atlántico", countryId: 1, countryName: "Colombia", registrationDate: "2022-05-12" },
-  { id: 4, name: "Guajira", countryId: 1, countryName: "Colombia", registrationDate: "2022-05-13" },
-  { id: 5, name: "Nariño", countryId: 1, countryName: "Colombia", registrationDate: "2022-05-14" }
+  {
+    id: 1,
+    name: "Cesar",
+    countryId: 1,
+    countryName: "Colombia",
+    registrationDate: "2022-05-10",
+  },
+  {
+    id: 2,
+    name: "Cundinamarca",
+    countryId: 1,
+    countryName: "Colombia",
+    registrationDate: "2022-05-11",
+  },
+  {
+    id: 3,
+    name: "Atlántico",
+    countryId: 1,
+    countryName: "Colombia",
+    registrationDate: "2022-05-12",
+  },
+  {
+    id: 4,
+    name: "Guajira",
+    countryId: 1,
+    countryName: "Colombia",
+    registrationDate: "2022-05-13",
+  },
+  {
+    id: 5,
+    name: "Nariño",
+    countryId: 1,
+    countryName: "Colombia",
+    registrationDate: "2022-05-14",
+  },
 ];
 
 export const RegionesPage: React.FC<{}> = () => {
@@ -35,7 +65,7 @@ export const RegionesPage: React.FC<{}> = () => {
                   </tr>
                 </thead>
                 <tbody>
-                  {regionsData.map(region => (
+                  {regionsData.map((region) => (
                     <tr key={region.id}>
                       <td>{region.id}</td>
                       <td>{region.name}</td>

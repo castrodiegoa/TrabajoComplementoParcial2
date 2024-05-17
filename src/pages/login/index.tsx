@@ -18,7 +18,7 @@ type LoginType = {
 
 const staticUser = {
   username: "diegoacastro",
-  password: "die18"
+  password: "die18",
 };
 
 export const LoginPage: React.FC<{}> = () => {
@@ -36,12 +36,15 @@ export const LoginPage: React.FC<{}> = () => {
 
   const handleSubmit = (e: React.FormEvent<HTMLInputElement>) => {
     e.preventDefault();
- 
-    if (loginData.username === staticUser.username && loginData.password === staticUser.password) {
-        setRedirect(true);
-        getSuccess("Usuario válido");
+
+    if (
+      loginData.username === staticUser.username &&
+      loginData.password === staticUser.password
+    ) {
+      setRedirect(true);
+      getSuccess("Usuario válido");
     } else {
-        getError("Credenciales incorrectas. Por favor, inténtalo de nuevo.");
+      getError("Credenciales incorrectas. Por favor, inténtalo de nuevo.");
     }
   };
 
@@ -93,7 +96,8 @@ export const LoginPage: React.FC<{}> = () => {
           </Paper>
         </Grid>
       </Grid>
-      {redirect && <Navigate to="/home" />} {/* Redirección si redirect es true */}
+      {redirect && <Navigate to="/home" />}{" "}
+      {/* Redirección si redirect es true */}
     </Container>
   );
 };
